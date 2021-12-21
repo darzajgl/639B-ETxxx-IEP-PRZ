@@ -2,11 +2,11 @@
 
 using namespace std;
 /*
-1. wymusza wpisanie liczby ca³kowitej x zawartej w przedziale <A,B>
-2. drukuje tak okreœlon¹ wartoœæ x
+1. wymusza wpisanie liczby calkowitej x zawartej w przedziale <A,B>
+2. drukuje tak okreslona wartosc x
 3. wczytuje ci¹g liczb ca³kowitych a¿ do wczytania liczby parzystej lub podzielnej przez x
-4. drukuje najwiêksz¹ ujemn¹ liczbê tego ci¹gu (nie bior¹c pod uwagê liczby koñcz¹cej ci¹g)
-    - lub informacjê, ¿e nie by³o liczb ujemnych
+4. drukuje najwieksza ujemna liczbe tego ciagu (nie biorac pod uwage liczby konczacej ciag)
+    - lub informacje, ze nie bylo liczb ujemnych
 */
 
 int main() {
@@ -26,12 +26,11 @@ int main() {
     //2.
     cout << "Swietnie, wprowadziles " << x << "." << endl;
 
-    //ponizsze rozwiazanie nie zadziala w przypadku x = 0
-
     cout << "\nPora na zagadke. \nZnajdz liczbe, ktora uwolni Cie z petli."<<endl;
 
     //3.
     do {
+
         if((zagadka < 0 ) && ((zagadka > najwieksza_ujemna) || (najwieksza_ujemna == 0))) {
             najwieksza_ujemna = zagadka;
         }
@@ -39,7 +38,11 @@ int main() {
         cin >> zagadka;
         cout << "\nWpisales "<<zagadka<<"."<<endl;
 
-    } while((zagadka%2 != 0) && (zagadka%x != 0));
+//  ponizsze rozwiazanie nie zadziala w przypadku x = 0
+//  } while((zagadka%2 != 0) && (zagadka%x != 0));
+
+// to rozwiazanie zadziala dla x=0, w takim przypadku wyjscie z petli tylko dla zagadka%2==0
+    } while((zagadka%2 != 0) || (x!=0 && zagadka%x != 0));
 
     //4.
     {
