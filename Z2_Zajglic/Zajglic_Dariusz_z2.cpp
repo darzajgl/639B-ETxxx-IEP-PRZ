@@ -42,7 +42,7 @@ int main() {
 //  } while((zagadka%2 != 0) && (zagadka%x != 0));
 
 // to rozwiazanie zadziala dla x=0, w takim przypadku wyjscie z petli tylko dla zagadka%2==0
-    } while((zagadka%2 != 0) || (x!=0 && zagadka%x != 0));
+    } while((x!=0 && zagadka%x != 0) || (zagadka%2 != 0));
 
     //4.
     {
