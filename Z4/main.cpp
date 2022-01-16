@@ -1,6 +1,7 @@
 #include <iostream>
 #include <iomanip>
 #include <cstdlib>
+#include <ctime>
 
 /*
 a. Tablice A[n][n] (n-stala) wypelnic liczbami losowymi calkowitymi z przedzialu <D,G> (D,G-stale)
@@ -18,11 +19,13 @@ using namespace std;
 
 int main() {
 
-    int n = 4;
-    int D = -17;
-    int G = 14;
+srand(time(NULL));
+
+    const int n = 4;
+    const int D = -17;
+    const int G = 14;
     int A[n][n];
-    int W = 7;
+    const int W = 7;
 
 //a.
 

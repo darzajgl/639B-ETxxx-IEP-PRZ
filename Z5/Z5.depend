@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1642344942 source:d:\studia politechnika warszawska\ps2\programowanie\zadania dodatkowe\z5\main.cpp
+	<fstream>
+	<iostream>
+	<string>
+	<cstdlib>
+	<iomanip>
+
