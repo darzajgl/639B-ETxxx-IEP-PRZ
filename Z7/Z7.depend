@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1642853644 source:d:\studia politechnika warszawska\ps2\programowanie\zadania dodatkowe\z7\main.cpp
+	<iostream>
+	<cstdlib>
+	<ctime>
+	<iomanip>
+
